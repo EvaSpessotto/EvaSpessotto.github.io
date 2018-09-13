@@ -1,6 +1,6 @@
-/*////////////////////////////////////////// CAROUSEL ///////////////////////////////////////*/
-.carousel {
-    margin-top: 56px;
+
+body{
+    margin-top: 60px;
 }
 
 
@@ -14,7 +14,6 @@
 
 
 /* Tranformation img*/
-
 .fellows img {
     opacity: 0.6;
     transition: 0.3s;
@@ -36,11 +35,6 @@
     max-width: 100%;
 }
 
-.badgeReward{
-    word-wrap: break-word;
-}
-
-
 /* Texte au dessus de l'image de la carte */
 .card-img-caption {
     border-top-left-radius: calc(.25rem - 1px);
@@ -57,7 +51,7 @@
     margin: 75% 0;
     position: absolute;
     z-index: 1;
-    color: black;
+    color: white;
     transition: 0.3s;
 
 }
@@ -65,4 +59,11 @@
 .card:hover .card-status {
     opacity: 0;
     transition: 0.3s;
+}
+
+/*Bouton Join Mordor Army*/
+
+.mordorArmy .btn{
+    white-space:normal !important;
+    word-wrap: break-word; 
 }
