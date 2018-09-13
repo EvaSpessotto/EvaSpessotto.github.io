@@ -1,0 +1,68 @@
+/*////////////////////////////////////////// CAROUSEL ///////////////////////////////////////*/
+.carousel {
+    margin-top: 56px;
+}
+
+
+/*///////////////////////////////////////// FELLOWS ////////////////////////////////////////*/
+.badge {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Tranformation img*/
+
+.fellows img {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.card:hover .badge {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.badge {
+    transition: 0.3s;
+    width: auto;
+    max-width: 100%;
+}
+
+.badgeReward{
+    word-wrap: break-word;
+}
+
+
+/* Texte au dessus de l'image de la carte */
+.card-img-caption {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-img-caption .card-img-top {
+    z-index: 0;
+}
+
+.card-img-caption .card-status {
+    text-align: center;
+    width: 100%;
+    margin: 75% 0;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    transition: 0.3s;
+
+}
+
+.card:hover .card-status {
+    opacity: 0;
+    transition: 0.3s;
+}
