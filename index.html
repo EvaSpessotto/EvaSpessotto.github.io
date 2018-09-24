@@ -7,42 +7,65 @@
     <title>Site de Sauron</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
     <!-- Feuille de style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">FindThePrecious.com</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-xl fixed-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fellows</a>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-5 ">
+
+                <li class="nav-item col-lg-2 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center" href="#">Fellows</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">The ring</a>
+
+                <li class="d-flex align-items-center d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">|</li>
+
+                <li class="nav-item col-lg-3 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center" href="#">The ring</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Get my reward</a>
+
+                <li class="d-flex align-items-center d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">|</li>
+
+                <li class="nav-item col-lg-2 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center" href="#">Reward</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Best hunters</a>
+
+                <li class="d-flex align-items-center d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">|</li>
+
+                <li class="nav-item col-lg-2 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center " href="#">Hunters</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Join the army</a>
+
+                <li class="d-flex align-items-center d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">|</li>
+
+                <li class="nav-item col-lg-2 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center" href="#">Join</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+
+                <li class="d-flex align-items-center  d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">|</li>
+                <li class="nav-item col-lg-2 col-md-2 mx-md-auto">
+                    <a class="nav-link text-center" href="#">Contact</a>
                 </li>
 
             </ul>
@@ -51,35 +74,37 @@
 
 
     <!-- Carousel -->
-    <div id="carouselExampleControls container-fluid " class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
+
+            <!-- Carousel caption -->
+            <div class="carousel-caption ">
+                <h1>Sauron is a very good bro</h1>
+                <h2>Please help him to find the ring</h2>
+            </div>
+
+            <!-- Item 1 -->
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://cinktank.s3-eu-west-1.amazonaws.com/uploads/news_item/image/771/large_width1024.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Dangerous fellowships try to destroy the ring</h5>
-                    <p>Orcs, Gobelins, Balrogs, protect your master Sauron !</p>
-                </div>
+                <img class="d-block w-100" src="img/dark-vador1220x400.jpg" alt="First slide">
             </div>
+
+            <!-- Item 2 -->
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://cinktank.s3-eu-west-1.amazonaws.com/uploads/number_of_the_day/image/283/large_81es-Photo-Nains.jpg" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Dangerous fellowships try to destroy the ring</h5>
-                    <p>Orcs, Gobelins, Balrogs, protect your master Sauron !</p>
-                </div>
+                <img class="d-block w-100" src="img/army.png" alt="Second slide">
             </div>
+
+            <!-- Item 3 -->
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://cinktank.s3-eu-west-1.amazonaws.com/uploads/number_of_the_day/image/313/large_AL.jpg" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Dangerous fellowships try to destroy the ring</h5>
-                    <p>Orcs, Gobelins, Balrogs, protect your master Sauron !</p>
-                </div>
+                <img class="d-block w-100" src="img/map-1220x400.png" alt="Third slide">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -89,103 +114,139 @@
     <div class="container">
 
         <!-- Fellows -->
-        <section class="fellows mt-5 mb-5">
-            <div class="fellowsTitle">
+        <section class=" row fellows mt-5 mb-5">
+
+            <!-- Titre -->
+            <div class="fellowsTitle mb-5 mt-5 ml-3 row col-lg-12">
+                <span class="symbol mr-5">ij</span>
                 <h2>Fellows wanted dead</h2>
-                <p>(or alive if you want to eat them later)</p>
+                <span>(or alive if you want to eat them later)</span>
+                <span class="symbol ml-5">ij</span>
             </div>
-            <div class="fellowsChoice text-center mb-5 ">
-                <div class="btn-group btn-group-toggle row " data-toggle="buttons">
-                    <label class="btn btn-secondary active col-xs-12 col-lg-4 rounded-0">
+
+            <!-- Bouttons radio pour choix -->
+            <div class="fellowsChoice mb-5 mx-auto row col-12 d-flex justify-content-center">
+                <div class="btn-group-toggle col-12" data-toggle="buttons">
+
+                    <label class="btn active col-xs-12">
+                        <span class="symbol">b</span>
                         <input type="radio" name="options" id="option1" autocomplete="off" checked> Most wanted
+                        <span class="symbol">b</span>
+                        <div class="underline"></div>
                     </label>
-                    <label class="btn btn-secondary col-xs-12 col-lg-4 rounded-0">
+
+                    <label class="mx-auto btn col-xs-12">
+                        <span class="symbol">b</span>
                         <input type="radio" name="options" id="option2" autocomplete="off"> Most dangerous
+                        <span class="symbol mr-5">b</span>
+                        <div class="underline"></div>
                     </label>
-                    <label class="btn btn-secondary col-xs-12 col-lg-4 pr-5 rounded-0">
+
+                    <label class="btn col-xs-12">
+                        <span class="symbol">b</span>
                         <input type="radio" name="options" id="option3" autocomplete="off"> Already captured
+                        <span class="symbol">b</span>
+                        <div class="underline"></div>
                     </label>
+
                 </div>
             </div>
 
-            <div class="row">
-                <div class="card col-12 col-md-6 mb-md-5 col-lg-4">
-                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/881859347411865602/71mnxv3E_400x400.jpg" alt="Card image cap">
-                    <div class="badgeReward">
-                        <h3 class=""><span class="badge badge-light">Reward 1000 golden coins</span></h3>
+            <!-- Portraits -->
+            <div class="mx-auto">
+                <div class="card-deck ">
+
+                    <!-- Gandalf -->
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="img/gandalf.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h3><span class="badge mt-3">Reward <span class="price">1200</span> golden coins</span></h3>
+                            <h5 class="card-title">Gandalf</h5>
+                            <p class="card-text">A verry dangerous wizard, balrog killer ...</p>
+                        </div>
                     </div>
 
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Gandoulf</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 mb-md-5 col-lg-4">
-                    <div class="card-img-caption">
-                        <h3 class="card-status font-weight-bold">DEAD</h3>
-                        <img class="card-img-top" src="https://petitsfilmsentreamisdotnet.files.wordpress.com/2015/06/15-le-seigneur-des-anneaux-la-communaute-de-l-anneau-petitsfilmsentreamis-net-abbyxav-optimisation-image-google-wordpress.jpg" alt="Card image cap">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Sam</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 mb-md-5 col-lg-4">
-                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/412732558258892800/snPPFCuJ_400x400.jpeg" alt="Card image cap">
-                    <div class="badgeReward">
-                        <h3 class=""><span class="badge badge-light">Reward 250 golden coins</span></h3>
+                    <!-- Aragorn -->
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="img/aragorn.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h3><span class="badge mt-3">Reward <span class="price">200</span> golden coins</span></h3>
+                            <h5 class="card-title">Aragorn</h5>
+                            <p class="card-text">Sauron finger says him his sword is dangerous.</p>
+                        </div>
                     </div>
 
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Gimli</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <!-- Gimli -->
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="img/gimli.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title dead">Gimli</h5>
+                            <p class="card-text">A dwarf with a beard and an axe.</p>
+                        </div>
+
                     </div>
+
                 </div>
-               
-            </div>
         </section>
 
 
         <!-- Get my reward -->
-        <hr>
-        <section class="getMyReward row mb-5 mt-5 col-lg-12">
-            <div class="col-lg-8 col-sm-12">
-                <h2>I have captured one of them, how can I get my reward?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class="getMyReward row mb-5 mt-5 col-lg-12 d-flex justify-content-center">
+            <div class="col-12 mt-5">
+                <span class="symbol ml-3 mt-5">ij</span>
+                <h2 class="mt-5 mx-3">I have captured one of them, how can I get my reward?</h2>
+                <span class="symbol mt-5">ij</span>
             </div>
-            <img class="col-lg-4 col-12 img-fluid" src="http://fr.web.img6.acsta.net/c_400_200/newsv7/17/11/04/19/12/2687916.jpg" alt="">
-            <div class="col-12 mx-auto mt-3 text-center">
-                <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+
+            <div class="col-lg-10 col-sm-12 mt-5 mb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class=" mt-lg-5 pb-5 d-flex">
+                <img class=" img-fluid rounded-circle" src="img/coin_sauron.png" alt="">
+            </div>
+            <div class="col-12 mx-auto mt-3 mb-5 text-center">
+                <button type="button" class="btn btn-lg rounded-0">Contact us</button>
             </div>
         </section>
 
 
 
         <!-- Best Hunters -->
-        <hr>
         <section class="bestHunters row mb-5 mt-5">
-            <h2 class="col-12 col-lg-12">Best hunters</h2>
-            <div class="media col-md-6 col-sm-12 mb-3 mt-3">
-                <img class="mr-3" src="https://us.v-cdn.net/5022341/uploads/userpics/161/nM2NU2YQXL0F0.jpg" alt="Generic placeholder image">
+
+            <!-- Title -->
+            <div class="col-12 mb-5">
+                <span class="symbol ml-3 mt-5">ij</span>
+                <h2 class="col-12 col-lg-12">Our best hunters</h2>
+                <span class="symbol mt-5">ij</span>
+            </div>
+
+            <!-- Hunter 1 -->
+            <div class="media col-md-6 col-sm-12 mb-3 mt-3 d-flex align-items-end ">
+                <img class="mr-3 rounded" src="img/hunter1.png" alt="Generic placeholder image">
                 <div class="media-body">
-                    <h5 class="mt-0">ElvesKiller22</h5>
+                    <h5 class="hunter-title mt-0">ElvesKiller22</h5>
                     <span>2 captures - <a href="#">Profile</a></span>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-thumbs-up"></i> Like
+                    <div class="mt-3">
+                        <button type="button" class="btn rounded-0 btn-sm"><i class="fas fa-thumbs-up"></i> Like
 
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="media col-md-6 col-sm-12 mb-3 mt-3">
-                <img class="mr-3" src="https://lezebre.lu/images/thumbnails/70/70/detailed/15/21628-trollface-meme-i-saw-what-you-did-jai-vu.jpg">
+            <!-- Hunter 2 -->
+            <div class="media col-md-6 col-sm-12 mb-3 mt-3 d-flex align-items-end ">
+                <img class="mr-3 rounded" src="img/hunter2.png">
                 <div class="media-body">
-                    <h5 class="mt-0">Gobelin45</h5>
+                    <h5 class="hunter-title mt-0">Gobelin45</h5>
                     <span>1 capture - <a href="#">Profile</a></span>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <div class="mt-3">
+                        <button type="button" class="btn rounded-0 btn-sm"><i class="fas fa-thumbs-up"></i> Like</button>
                     </div>
                 </div>
             </div>
@@ -194,16 +255,21 @@
 
         <!-- About the ring -->
         <hr>
-        <sectiion class="aboutTheRing row mb-5 mt-5">
-            <h2 class="col-12 col-lg-12">About the ring</h2>
-            <div class="card col-lg-12">
-                <div class="card-header">
+        <section class="aboutTheRing row mb-5 mt-5 p-5">
+            <div class="col-12 mb-5">
+                <span class="symbol ml-3 mt-5">ij</span>
+                <h2 class="col-12 col-lg-12 mb-5">About the ring</h2>
+                <span class="symbol mt-5">ij</span>
+            </div>
+
+            <div class="card col-lg-10 p-0 mx-auto border-0">
+                <div class="card-header border-0">
                     Ring capabilities
                 </div>
                 <div class="card-body">
                     <p class="card-text">What an our master Sauron do with the ring?</p>
 
-                    <table class="table table-striped text-center table-bordered">
+                    <table class="table ml-1 text-left">
                         <thead>
                             <tr>
                                 <th scope="col">Feature</th>
@@ -228,19 +294,21 @@
                 </div>
             </div>
 
-            <div class="card mt-3 col-lg-12 col-md-12">
-                <div class="card-header">
+            <!-- Gollum -->
+            <div class="card gollum mt-3 col-lg-12 col-md-12 border-0 p-0">
+                <div class="card-header border-0">
                     Why the ring is awesome?
                 </div>
                 <div class="card-body row d-flex justify-content-center">
-                    <blockquote class="blockquote mb-0 col-lg-8 ">
+                    <blockquote class="blockquote mb-0 col-lg-8">
                         <p>My preciouuuussssss ! Hrk hrk, we want ooouurrr preeeciiouuuusss !!</p>
                         <footer class="blockquote-footer d-flex justify-content-end">Gollum</footer>
                     </blockquote>
-                    <img class="img-thumbnail rounded-circle offset-lg-1" src="https://f4.bcbits.com/img/a2425337636_7.jpg" alt="Gollum">
+                    <img class="img-thumbnail rounded-circle offset-lg-1" src="https://f4.bcbits.com/img/a2425337636_7.jpg"
+                        alt="Gollum">
                 </div>
             </div>
-        </sectiion>
+        </section>
 
 
         <!-- Join Mordor Army -->
@@ -248,9 +316,15 @@
         <section class="mordorArmy row mt-5 mb-5">
             <h2 class="col-12 col-lg-12">Join Mordor Army, we need you !</h2>
             <div class="row col-lg-12 mt-3">
-                <img clas="col-lg-2 col-12 img-fluid mb-5" src="https://t00.deviantart.net/PxD79O1mwVWZrqVYiIt7z9IshNI=/fit-in/150x150/filters:no_upscale():origin()/pre00/84ad/th/pre/f/2015/305/e/c/eye_of_sauron_by_stirzocular-d9f0t6k.png" alt="" class="col-lg-2 mb-xs-5">
+                <img clas="col-lg-2 col-12 img-fluid mb-5" src="https://t00.deviantart.net/PxD79O1mwVWZrqVYiIt7z9IshNI=/fit-in/150x150/filters:no_upscale():origin()/pre00/84ad/th/pre/f/2015/305/e/c/eye_of_sauron_by_stirzocular-d9f0t6k.png"
+                    alt="" class="col-lg-2 mb-xs-5">
                 <div class="col-lg-10 mt-3">
-                    <p class="d-flex align-items-end ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="d-flex align-items-end ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.</p>
                     <div class="mx-auto mt-3 text-center">
                         <button type="button" class="btn btn-primary btn-lg">More infos on SauronRuleThemAll.com</button>
                     </div>
@@ -373,9 +447,12 @@
 
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
