@@ -1,0 +1,311 @@
+
+body{
+    margin-top: 60px;
+}
+
+@font-face {
+    font-family: "Aniron";
+    src: url('fonts/title/anirb___.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Tengwar";
+    src: url('tngan.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PartyBusiness";
+    src: url('partybusiness.ttf') format('truetype');
+}
+
+h1{
+    font-family: "PartyBusiness";
+}
+
+h2{
+    font-family: "Aniron";
+    font-size: 1.4em;
+}
+
+
+
+/*///////////////////////////////////////// NAV ////////////////////////////////////////*/
+.navbar{
+    background-color: #ff5000;
+}  
+
+.navbar li{
+    color: white;
+    font-family: Aniron;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* Liens menu soulignés */
+.navbar-nav li > a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav li > a:hover {
+    color: white;
+}
+
+.navbar-nav li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav li > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+/*///////////////////////////////////////// SLIDER ////////////////////////////////////////*/
+
+.carousel-item{
+    filter: brightness(0.6);
+}
+
+
+
+/*///////////////////////////////////////// FELLOWS ////////////////////////////////////////*/
+.fellowsTitle{
+    font-family: "Aniron";
+}
+
+.fellowsTitle h2{
+    display: inline;
+}
+
+/* symboles elfiques */
+.symbol{
+    font-family:  "Tengwar";
+    color: #ff5000;
+}
+
+.fellowsChoice{
+    font-family: "Aniron";
+}
+
+.fellowsChoice .btn{
+    color: grey;
+}
+
+.fellowsChoice .btn.active{
+    color: #ff5000;
+}
+
+/* Soulignement du choix */
+.fellowsChoice .btn.active .underline{
+    display: block;
+}
+
+.underline{
+    content: "";
+    height: 5px;
+    background-color: #ff5000;
+    display: none;
+}
+
+.fellowsChoice .symbol{
+    font-family: "Tengwar";
+    display: none;
+}
+
+.fellowsChoice .btn.active .symbol{
+    display: inline;
+}
+/* Fin soulignement du choix */
+
+
+.badge {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "PartyBusiness";
+    background-color:rgba(225, 225, 225, 0.7);
+    color: black; 
+    white-space:normal !important;
+    word-wrap: break-word;  
+    font-size: 1em;
+}
+
+.fellows .price{
+    color: #ff5000;
+}
+
+/* Typo barrée */
+.fellows .dead:before {
+    border-bottom: 5px solid #ff5000;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+}
+/* Fin typo barrée */
+
+.fellows .card-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "PartyBusiness";
+    font-size: 3em;
+}
+
+.fellows .card{
+    background-color: black;
+    color: white;
+    transition: ease 0.3s;
+    overflow: hidden;
+    
+}
+
+.fellows .card:hover .card-title{
+    opacity: 0;
+    transition: ease 0.3s;
+}
+
+
+/* Tranformation img*/
+.fellows img {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.card:hover .badge {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.badge {
+    transition: 0.3s;
+    width: auto;
+    max-width: 100%;
+}
+/* Fin tranformation img*/
+
+
+
+
+
+/*///////////////////////////////////////// GET MY REWARD ////////////////////////////////////////*/
+.getMyReward{
+    background-color: black;
+    color: white;
+    font-style: "PartyBusiness";
+}
+
+.getMyReward h2{
+    display: inline;
+}
+
+.getMyReward .btn{
+    background-color: white;
+    color: #ff5000;
+    font-style: "Aniron";
+    font-size: 2em;
+}
+
+
+/*///////////////////////////////////////// BEST HUNTERS ////////////////////////////////////////*/
+
+.bestHunters h2{
+    display: inline;
+}
+
+.bestHunters .hunter-title{
+    color: #ff5000;
+    font-family: "PartyBusiness";
+    font-size: 2.5em;
+}
+
+.bestHunters .btn{
+    background-color: black;
+    border:  none;
+    color: #ff5000;
+}
+
+.bestHunters a{
+    color: black;
+    text-decoration: underline;
+}
+
+.bestHunters a:hover{
+    color: #ff5000;
+}
+
+
+/*///////////////////////////////////////// ABOUT THE RING ////////////////////////////////////////*/
+
+.aboutTheRing{
+    background-color: black;
+}
+
+.aboutTheRing h2{
+    color: white;
+    display: inline;
+}
+
+.aboutTheRing .card-header{
+    background-color: #ff5000;
+    color: white;
+    font-family: "Aniron";
+}
+
+.aboutTheRing .card-text{
+    font-family: "PartyBusiness";
+}
+
+.aboutTheRing .table{
+    background-color: none;
+}
+
+.aboutTheRing .table thead th{
+    font-family: "Aniron";
+    color: black;
+    border-bottom: solid #000000 2px;
+    border-top: 0; 
+}
+
+.aboutTheRing td{
+    color: grey;
+    font-family: "Aniron";
+    border-top: solid grey 2px;
+    border-bottom: 0;
+}
+
+
+
+/*///////////////////////////////////////// JOIN THE ARMY ////////////////////////////////////////*/
+
+
+/*Bouton Join Mordor Army*/
+.mordorArmy .btn{
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
