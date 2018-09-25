@@ -10,12 +10,12 @@ body{
 
 @font-face {
     font-family: "Tengwar";
-    src: url('tngan.ttf') format('truetype');
+    src: url('fonts/symbols/tngan.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "PartyBusiness";
-    src: url('partybusiness.ttf') format('truetype');
+    src: url('fonts/txt/partybusiness.ttf') format('truetype');
 }
 
 h1{
